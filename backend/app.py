@@ -22,7 +22,7 @@ def hello():
     db_version = cur.fetchone()
     cur.close()
     conn.close()
-    return f"App connectée à : {db_version}"
+    return f"a blowfich jessie....think about it : {db_version}"
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

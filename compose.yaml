@@ -33,6 +33,8 @@ services:
       context: ./backend
     env_file:
       - .env
+    environment:      # <--- AJOUTE CECI
+      - FLASK_DEBUG=1 # Active le hot-reload natif de Flask
     networks:
       - backend
       - frontend
